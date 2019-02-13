@@ -7,6 +7,8 @@
         <Property name="text" type="java.lang.String" value="jFormattedTextField1"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JTextField" name="cpEndereco1">
+    </Component>
   </NonVisualComponents>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -34,13 +36,13 @@
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="cpResponsavel" alignment="0" pref="155" max="32767" attributes="0"/>
                           <Component id="labelResponsavel" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField18" alignment="0" pref="155" max="32767" attributes="0"/>
+                          <Component id="cpFb" alignment="0" pref="155" max="32767" attributes="0"/>
                           <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="cpEmail" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField20" alignment="0" pref="155" max="32767" attributes="0"/>
+                          <Component id="cpInsta" alignment="0" pref="155" max="32767" attributes="0"/>
                           <Component id="labelCpf" alignment="0" min="-2" pref="133" max="-2" attributes="0"/>
                           <Component id="jLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="cpCpf" max="32767" attributes="0"/>
@@ -52,11 +54,18 @@
                                   <Component id="cpCelularResp" alignment="0" max="32767" attributes="0"/>
                                   <Component id="labelCelularResponsavel" alignment="0" min="-2" pref="147" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="cpRenda" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
-                                  <Component id="labelRenda" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
-                                  <Component id="btnSalvar" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="labelRenda" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
+                                          <Component id="btnSalvar" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="cpRenda" min="-2" pref="113" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -73,7 +82,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="18" max="32767" attributes="0"/>
+              <EmptySpace pref="54" max="32767" attributes="0"/>
           </Group>
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
@@ -86,35 +95,54 @@
                           <Component id="labelEmail" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="labelCidade" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="labelCnpj" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
-                          <Component id="cpCnpj" alignment="0" pref="155" max="32767" attributes="0"/>
-                          <Component id="labelCep" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
-                          <Component id="cpCep" alignment="0" pref="155" max="32767" attributes="0"/>
-                          <Component id="labelTelefone" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
-                          <Component id="cpTelefone" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="labelInscricao" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
-                          <Component id="cpInscricao" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
-                          <Component id="cpEndereco" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
-                          <Component id="labelEndereco" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="labelCnpj" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
+                                  <Component id="labelCep" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
+                                  <Component id="labelTelefone" alignment="0" min="-2" pref="64" max="-2" attributes="0"/>
+                                  <Component id="cpTelefone" min="-2" pref="155" max="-2" attributes="0"/>
+                                  <Component id="cpCep" alignment="0" min="-2" pref="110" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
+                              <Component id="cpCnpj" min="-2" pref="128" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="labelBairro" min="-2" pref="119" max="-2" attributes="0"/>
-                              <EmptySpace pref="46" max="32767" attributes="0"/>
+                              <Component id="cpEndereco2" max="32767" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="cpNumero" min="-2" pref="37" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                           </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="labelInscricao" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
+                                  <Component id="cpInscricao" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
+                                  <Component id="labelEndereco" alignment="0" min="-2" pref="134" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="labelDataCadastro" alignment="0" min="-2" pref="119" max="-2" attributes="0"/>
-                                  <Component id="cpBairro" alignment="0" min="-2" pref="155" max="-2" attributes="0"/>
                                   <Component id="cpData" min="-2" pref="119" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="40" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="cpBairro" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="labelBairro" alignment="0" pref="119" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="40" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -135,13 +163,18 @@
                   <Component id="labelDataCadastro" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cpNomeEmpresa" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="cpCnpj" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="cpInscricao" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="cpData" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cpNomeEmpresa" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="cpInscricao" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                      <Component id="cpData" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
+                      <Component id="cpCnpj" min="-2" pref="25" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="labelCidade" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                   <Component id="labelCep" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
@@ -152,8 +185,9 @@
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="cpCidade" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                   <Component id="cpCep" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                  <Component id="cpEndereco" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                   <Component id="cpBairro" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="cpEndereco2" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                  <Component id="cpNumero" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
@@ -192,10 +226,7 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                              <Component id="cpResponsavel" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                              <Component id="cpRenda" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="cpResponsavel" alignment="0" min="-2" pref="29" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                               <Component id="cpCpf" min="-2" pref="25" max="-2" attributes="0"/>
@@ -204,7 +235,10 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="cpCelularResp" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="cpRenda" min="-2" pref="25" max="-2" attributes="0"/>
+                          <Component id="cpCelularResp" min="-2" pref="25" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -216,8 +250,8 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField18" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
-                          <Component id="jTextField20" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="cpFb" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
+                          <Component id="cpInsta" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -233,9 +267,9 @@
   <SubComponents>
     <Component class="javax.swing.JTextField" name="cpCidade">
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField18">
+    <Component class="javax.swing.JTextField" name="cpFb">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField18ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cpFbActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="labelEndereco">
@@ -246,7 +280,7 @@
         <Property name="text" type="java.lang.String" value="Endere&#xe7;o / N&#xfa;mero"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="cpEndereco">
+    <Component class="javax.swing.JTextField" name="cpNumero">
     </Component>
     <Component class="javax.swing.JLabel" name="labelBairro">
       <Properties>
@@ -274,7 +308,7 @@
         <Property name="text" type="java.lang.String" value="Link do Instagram"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField20">
+    <Component class="javax.swing.JTextField" name="cpInsta">
     </Component>
     <Component class="javax.swing.JTextField" name="cpEmail">
       <Events>
@@ -321,8 +355,6 @@
         <Property name="text" type="java.lang.String" value="E-mail"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="cpCnpj">
-    </Component>
     <Component class="javax.swing.JLabel" name="labelCelular">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -363,8 +395,6 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cpNomeEmpresaActionPerformed"/>
       </Events>
-    </Component>
-    <Component class="javax.swing.JTextField" name="cpRenda">
     </Component>
     <Component class="javax.swing.JLabel" name="labelInscricao">
       <Properties>
@@ -481,6 +511,22 @@
       <Properties>
         <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
           <Format format="##/##/####" subtype="-1" type="5"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="cpEndereco2">
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="cpRenda">
+      <Properties>
+        <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+          <Format format="R$ ###,##" subtype="-1" type="5"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JFormattedTextField" name="cpCnpj">
+      <Properties>
+        <Property name="formatterFactory" type="javax.swing.JFormattedTextField$AbstractFormatterFactory" editor="org.netbeans.modules.form.editors.AbstractFormatterFactoryEditor" preCode="try {" postCode="} catch (java.text.ParseException ex) {&#xa;ex.printStackTrace();&#xa;}">
+          <Format format="####-##" subtype="-1" type="5"/>
         </Property>
       </Properties>
     </Component>
